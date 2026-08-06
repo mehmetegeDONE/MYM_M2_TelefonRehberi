@@ -1,6 +1,6 @@
 /* GitHub oluşturma ezber
 
-1) Create repocity de
+1) Intellijde create repocity de commit menusunden
 
 2) gitignore'a gel...
 
