@@ -26,5 +26,5 @@ fun hipotenusHesapla(ilkKenar : Int, ikinciKenar: Int) : Int{
     val ilkKenarKaresi = kareHesapla(ilkKenar)
     val ikinciKenarKaresi = kareHesapla(ikinciKenar)
 
-    return ikinciKenarKaresi + ikinciKenarKaresi
+    return ilkKenarKaresi + ikinciKenarKaresi
 }
