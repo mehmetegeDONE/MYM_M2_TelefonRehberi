@@ -22,5 +22,5 @@ fun main() {
 
     isimler = mutableListOf("A","B") // val yaparsan eğer yeni liste atayamazsın, indexler atama sayılmaz!
 
-
+    
 }
