@@ -28,3 +28,46 @@ fun hipotenusHesapla(ilkKenar : Int, ikinciKenar: Int) : Int{
 
     return ilkKenarKaresi + ikinciKenarKaresi
 }
+
+// Alistirma 1
+
+fun sepeteUrunEkle(urunListesi : MutableList<String>){
+    for (i in 1..3){
+        println("Urun ismi girin: ")
+        val urun = readln().trim().lowercase()
+        if (urun.isNotEmpty()){
+            urunListesi.add(urun)
+        }
+    }
+}
+
+fun urunSorgula(urunlerListesi : MutableList<String>){
+    println("Aramak istediginiz ürün adını girin: ")
+    val arananUrun = readln().trim().lowercase()
+    if (urunlerListesi.contains(arananUrun)){
+        val aranananUrununSirasi = urunlerListesi.indexOf(arananUrun)
+        println("Mevcut ürünün indexi: $aranananUrununSirasi")
+    } else {
+        println("Urun sepetinizde bulunamadı!: $arananUrun, listenin başına ekleniyor...")
+        urunlerListesi.add(0,arananUrun)
+        println("Yeni ürün listesi: $urunlerListesi")
+    }
+}
+
+// Alistirma 4
+
+fun plakaDogrula(gecerliPlakalar : List<Int>){
+    print("Aramak istedigiğiniz plaka kodunu girin: ")
+    val arananPlaka = readln().toIntOrNull()
+
+    if (arananPlaka == null){
+        println("Geçerli bir kod girin!")
+    }
+    else {
+        if (gecerliPlakalar.contains(arananPlaka)){
+            println("Sistemimiz bu şehri desteklemektedir")
+        } else {
+            println("Desteklenmeyen plaka kodu")
+        }
+    }
+}
